@@ -251,3 +251,27 @@ CONTROL + F*/
 
 
 /*SOBRE NOSOTRES*/
+
+/*New letter*/
+
+.NewLetter{
+    background-color: #ffffff;
+    display: grid;
+    grid-template: repeat(5, 20%);
+    margin: 10%;
+}
+.nombre{
+    grid-column: span 2;
+    grid-row-start: 1 ;
+}
+.mail{
+    grid-row-start: 2;
+    grid-column: span 2;
+}
+.fecha{
+    grid-row-start: 3;
+    grid-column: span 2;
+}
+.texto{
+    grid-column-start: 3;
+}
