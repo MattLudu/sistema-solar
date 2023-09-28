@@ -50,7 +50,7 @@ h1 {
     font-family: 'Martel', sans-serif;
     font-size: 40px;
     display: inline-block;
-    background-image: url(/img/Titulo.jpg);
+    background-image: url(../img/Titulo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -61,7 +61,7 @@ h1 {
 }
 
 h2 {
-    background: linear-gradient(transparent, rgb(255, 255, 255)), url(/img/galaxy-espacio-textura-fondo.jpg);
+    background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.jpg);
     background-size: cover;
     background-position: bottom;
     color: black;
@@ -71,7 +71,7 @@ h2 {
 }
 
 h3 {
-    background: linear-gradient(transparent, rgb(255, 255, 255)), url(/img/galaxy-espacio-textura-fondo.jpg);
+    background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.jpg);
     background-size: cover;
     background-position: center;
     color: black;
@@ -145,7 +145,7 @@ div ul li {
 .menu .botones:hover {
     color: rgb(255, 255, 255);
     transform: rotate(10deg);
-    background-image: url(/img/button.jpg);
+    background-image: url(../img/button.jpg);
     background-size: cover;
     background-position: top;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
