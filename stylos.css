@@ -1,0 +1,253 @@
+/*ESTILOS GENERALES*/
+* {
+    font-family: 'Martel', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url(../img/galaxy-espacio-textura-fondo.jpg);
+    background-size: cover;
+    background-position: top;
+    min-width: 300px;
+    min-height: 800px;
+    background-repeat: repeat;
+}
+
+.All {
+    display: grid;
+    grid-template-areas:
+        "nav header"
+        "nav article"
+        "footer footer ";
+    grid-template-columns: 3rem auto;
+    margin: 1px 1.5rem;
+    background-color: #ffffff;
+    border-radius: 3rem 0;
+    min-height: 100%;
+    padding: 5px;
+}
+
+header {
+    font-size: 15px;
+    padding-right: 2rem;
+    text-decoration: none;
+    grid-area: header;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    grid-area: nav;
+    font-size: 1rem;
+    border-bottom: 1px solid rgb(62, 62, 67);
+}
+
+h1 {
+    font-family: 'Martel', sans-serif;
+    font-size: 40px;
+    display: inline-block;
+    background-image: url(/img/Titulo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10%;
+    margin-top: -20px;
+}
+
+h2 {
+    background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    padding: 5px 0rem 5px 4rem;
+}
+
+h3 {
+    background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding: 5px 0rem 5px 4rem;
+}
+
+.sidebar {
+    width: 1.9rem;
+    height: 310px;
+    box-sizing: border-box;
+    background-color: #0f0f0f;
+    padding: 0.5rem;
+    overflow: hidden;
+    border-radius: 3rem 0;
+    transition: 500ms ease;
+    z-index: 1;
+    margin-top: 1rem;
+}
+
+article {
+    grid-area: article;
+    /*mantiene la forma del MAINback*/
+    z-index: 0;
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+}
+
+footer {
+    grid-area: footer;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+    ;
+    margin: 15px;
+    font-size: 0.7em;
+    text-align: justify;
+}
+
+div ul li {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+*::selection{
+    background-color: rgba(145, 41, 243, 0.3);
+}
+
+/*MENU*/
+.menu a {
+    color: black;
+    margin: 0px 0px 0px 2rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    text-align: center;
+}
+
+.menu .botones:hover {
+    color: rgb(255, 255, 255);
+    transform: rotate(10deg);
+    background-image: url(../img/button.jpg);
+    background-size: cover;
+    background-position: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.barra {
+    cursor: default;
+}
+
+/*INDEX*/
+
+/*ESTILO DEL ARTICLE*/
+.imagen1 {
+    max-width: 500px;
+    max-height: 650px;
+    min-width: 450px;
+    min-height: 500px;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.imagen1:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+    border-radius: 0.5rem;
+}
+
+.imagen2 {
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    justify-content: space-evenly;
+    font-size: 35px;
+    margin: 2rem;
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+
+/*EFECTOS Y CONTENIDO DEL NAV*/
+.sidebar:hover {
+    width: 120px;
+    border-radius: 2rem 0;
+    cursor: url('../img/cohete-nav1.png'), auto;
+}
+ 
+.sidebar a {
+    cursor: url('../img/cohete-sel.png'), auto;
+    color: rgb(146, 41, 243);
+}
+.sidebar a:link{
+    color: rgb(255, 255, 255);
+}
+
+nav ul li {
+    border-bottom: 1px solid rgb(62, 62, 67);
+    padding: none;
+}
+
+.nombre_planeta {
+    display: flex;
+    align-items: center;
+}
+
+.planeta {
+    margin: 2px;
+}
+
+.icono {
+    max-width: 1rem;
+    margin-right: 0.3rem;
+}
+
+/*MEDIA QUERY*/
+/* @media screen and (max-width: 900px){
+ .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+p{margin: 1px;}
+} 
+CONTROL + F*/
+
+
+
+
+/*SOBRE NOSOTRES*/
