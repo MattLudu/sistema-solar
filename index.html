@@ -1,73 +1,431 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./Css/stylos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Martel:wght@200&family=Roboto:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Martel&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="../img/sistema-solar.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/sistema-solar.png" type="SolarSistem">
     <title>Sistema Solar</title>
+
 </head>
+
 <body>
     <div class="All">
         <header>
             <div class="menu">
-                <div class="botones"><a href="index.html">Inicio</a></div>
-                <div class="botones"><a href="#">Nosotros</a></div>
-                <div class="botones"><a href="NewLetter.html">New Letter</a></div>
+                <a class="botones" href="index.html">Inicio</a>
+                <a class="barra">|</a>
+                <a class="botones" href="nosotros.html">Nosotros</a>
+                <a class="barra">|</a>
+                <a class="botones" href="contacto.html">Contacto</a>
+                <a class="barra">|</a>
+                <a class="botones" href="#">Blog</a>
             </div>
-
+            <div>
+                <h1>Sistema Solar</h1>
+            </div>
         </header>
+
         <nav class="sidebar">
             <ul>
-                <li><a href="#sol">Sol</a></li>
-                <li><a href="#mercurio">Mercurio</a></li>
-                <li><a href="#venus">Venus</a></li>
-                <li><a href="#tierra">Tierra</a></li>
-                <li><a href="#marte">Marte</a></li>
-                <li><a href="#jupiter">Júpiter</a></li>
-                <li><a href="#saturno">Saturno</a></li>
-                <li><a href="#urano">Urano</a></li>
-                <li><a href="#neptuno">Neptuno</a></li>
-            </ul>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/sol.png" />
+                        <a href="#sol">
+                            <span class="planeta">Sol</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/mercurio.png" />
+                        <a href="#mercurio">
+                            <span class="planeta">Mercurio</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/venus.png" />
+                        <a href="#venus">
+                            <span class="planeta">Venus</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/tierra.png" />
+                        <a href="#tierra">
+                            <span class="planeta">Tierra</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/marte.png" />
+                        <a href="#marte">
+                            <span class="planeta">Marte</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/jupiter.png" />
+                        <a href="#jupiter">
+                            <span class="planeta">Jupiter</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/saturno.png" />
+                        <a href="#saturno">
+                            <span class="planeta">Saturno</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/urano.png" />
+                        <a href="#urano">
+                            <span class="planeta">Urano</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/neptuno.png" />
+                        <a href="#neptuno">
+                            <span class="planeta">Neptuno</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nombre_planeta">
+                        <img class="icono" src="./img/pluton.png" />
+                        <a href="#pluton">
+                            <span class="planeta">Pluton</span>
+                        </a>
+                    </div>
+                </li>
         </nav>
-        <div class="content">
+
+        <article class="content">
             <section id="sol">
-                <h2>Sol</h2>
-                <ul>
-                    <li>Diámetro: 1,391,000 km</li>
-                    <li>Masa: 1.989 × 10^30 kg</li>
-                    <li>Temperatura superficial: 5,500 °C</li>
-                    <!-- Agrega más características del Sol aquí -->
-                </ul>
+                <h2 class="titulo">Sol</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/sol2.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
+
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/sol.jpg" alt="">
+                    <img class='imagen2' src="./img/sol33.png" alt="">
+                    <img class='imagen2' src="./img/sol-desde-tierra.jpg" alt="Sol visto desde la tierra">
+                </div>
+
             </section>
+            <br>
             <section id="mercurio">
-                <h2>Mercurio</h2>
-                <ul>
-                    <li>Diámetro: 4,880 km</li>
-                    <li>Masa: 3.3011 × 10^23 kg</li>
-                    <li>Distancia al Sol: 57.9 millones de km</li>
-                    <!-- Agrega más características de Mercurio aquí -->
-                </ul>
+                <h2 class="titulo">Mercurio</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/mercurio3.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
+
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/mercurio1.jpg" alt="">
+                    <img class='imagen2' src="./img/mercurio4.jpg" alt="">
+                    <img class='imagen2' src="./img/mercuriomov.gif" alt="">
+                </div>
+
             </section>
+            <br>
             <section id="venus">
-                <h2>Venus</h2>
-                <ul>
-                    <li>Diámetro: 12,104 km</li>
-                    <li>Masa: 4.8675 × 10^24 kg</li>
-                    <li>Atmósfera: Dióxido de carbono</li>
-                    <!-- Agrega más características de Venus aquí -->
-                </ul>
+                <h2 class="titulo">Venus</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/venus.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
+
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/venus2.jpg" alt="">
+                    <img class='imagen2' src="./img/venusmov.gif" alt="">
+                    <img class='imagen2' src="./img/venus3.gif" alt="">
+                </div>
+
             </section>
-            <!-- Repite este patrón para los otros planetas -->
-        </div>
+            <br>
+            <section id="tierra">
+                <h2 class="titulo">Tierra</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/Tierra3.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
 
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/tierra-galaxia.jpg" alt="">
+                    <img class='imagen2' src="./img/Tierra.gif" alt="">
+                    <img class='imagen2' src="./img/tierramov.gif" alt="">
+                </div>
+
+            </section>
+            <br>
+            <section id="marte">
+                <h2 class="titulo">Marte</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/Marte2.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
+
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/Marte.jpg" alt="">
+                    <img class='imagen2' src="./img/marte1.jpg" alt="">
+                    <img class='imagen2' src="./img/Marte3.gif" alt="">
+                </div>
+
+            </section>
+            <br>
+            <section id="jupiter">
+                <h2 class="titulo">Jupiter</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/jupiter-cielo-noche-juego-activos-fondo-2d-ai-generativo-futurista.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
+
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/Jupiter.jpg" alt="">
+                    <img class='imagen2' src="./img/Jupiter3.jpg" alt="">
+                    <img class='imagen2' src="./img/jupiter1.gif" alt="">
+
+                </div>
+
+            </section>
+            <br>
+            <section id="saturno">
+                <h2 class="titulo">Saturno</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/Saturno1.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
+
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/saturnoanimado.jpg" alt="">
+                    <img class='imagen2' src="./img/Saturno.jpg" alt="">
+                    <img class='imagen2' src="./img/Saturnomov.gif" alt="">
+                </div>
+
+            </section>
+            <br>          
+            <section id="urano">
+                <h2 class="titulo">Urano</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/Urano1.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
+
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/urano2.jpg" alt="">
+                    <img class='imagen2' src="./img/uranooneptuno.jpg" alt="">
+                    <img class='imagen2' src="./img/Uranomovç.gif" alt="">
+                </div>
+
+            </section>
+            <br>   
+            <section id="neptuno">
+                <h2 class="titulo">Neptuno</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/neptunoprin.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
+
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/neptuno11.jpg" alt="">
+                    <img class='imagen2' src="./img/neptuno1.jpg" alt="">
+                    <img class='imagen2' src="./img/Neptunomov.gif" alt="">
+                </div>
+
+            </section>
+            <br>   
+            <section id="pluton">
+                <h2 class="titulo">Pluton</h2>
+                <div class="info">
+                    <img class="imagen1" src="./img/pluton2.jpg" alt="">
+                    <div class="info-texto">
+                        <p>El Sol es una estrella que se encuentra en el centro del sistema solar y constituye la mayor
+                            fuente de radiación electromagnética de este sistema planetario. Es una esfera casi perfecta
+                            de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un
+                            proceso de dinamo.</p>
+                        <ul>
+                            <li>Diámetro: 1,391,000 km</li>
+                            <li>Masa: 1.989 × 10^30 kg</li>
+                            <li>Temperatura superficial: 5,500 °C</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Caracteristicas principales</h3>
+                <p class="caracteristicas">El Sol es una estrella que se encuentra en el centro del sistema solar y
+                    constituye la mayor fuente de radiación electromagnética de este sistema planetario. Es una esfera
+                    casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través
+                    de un proceso de dinamo.</p>
+
+                <div class="imagenes">
+                    <img class='imagen2' src="./img/plutonprin.jpg" alt="">
+                    <img class='imagen2' src="./img/pluton3.jpg" alt="">
+                    <img class='imagen2' src="./img/plutonmov.gif" alt="">
+                </div>
+
+            </section>
+            <br>     
+        </article>
+
+        <footer>
+            <h4>Hola soy un footer</h4>
+            <div class="botones"><a href="https://www.flaticon.es/iconos-gratis/dom" title="dom iconos">iconos -
+                    Freepik- Flaticon</a></div>
+        </footer>
     </div>
-
 </body>
+
 
 </html>

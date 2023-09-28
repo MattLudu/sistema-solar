@@ -90,29 +90,3 @@ nav ul li:last-child {
 .content {
     margin-left: 200px;
 }
-h2{
-    color: aquamarine;
-    margin: auto;
-    align-items: center;
-    
-}
-.cuestionario{
-    background-color: #fff;
-    margin: 25px;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(5, 20%);
-}
-.nombre{
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column: span 2;
-}
-.mail{
-    grid-row-start:2;
-    grid-column: span 2;
-}
-.fecha{
-    grid-row-start:3;
-    grid-column: span 2;
-}
