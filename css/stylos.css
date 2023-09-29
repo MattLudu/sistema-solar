@@ -246,11 +246,30 @@ nav ul li {
 p{margin: 1px;}
 } 
 CONTROL + F*/
-
-
-
-
 /*SOBRE NOSOTRES*/
+.Sobre-nosotres{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "article article"
+        "footer  footer ";
+    grid-template-columns: 3rem auto;
+    margin: 10px 1.5rem;
+    margin-left: -10px;
+    border-radius: 3rem 0;
+    padding: 5px;
+}
+.contacto1{
+    grid-area: article;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+}
+.iconoc{
+    max-width: 40px;
+    margin-right: 5px;
+}
+
 
 /*New letter*/
 
