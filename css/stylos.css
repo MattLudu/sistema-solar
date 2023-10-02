@@ -113,9 +113,7 @@ footer {
 
 p {
     font-family: 'Comfortaa', cursive;
-    ;
     margin: 15px;
-    font-size: 0.7em;
     text-align: justify;
 }
 
@@ -180,6 +178,7 @@ div ul li {
     min-height: 200px;
     border-radius: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .imagenes {
@@ -199,7 +198,7 @@ div ul li {
 .caracteristicas {
     display: flex;
     justify-content: space-evenly;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -246,29 +245,21 @@ nav ul li {
 p{margin: 1px;}
 } 
 CONTROL + F*/
+
+
+
+
 /*SOBRE NOSOTRES*/
-.Sobre-nosotres{
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "article article"
-        "footer  footer ";
-    grid-template-columns: 3rem auto;
-    margin: 10px 1.5rem;
-    margin-left: -10px;
-    border-radius: 3rem 0;
-    padding: 5px;
+.sobre-nos{
+    font-size: 1.5rem;
 }
-.contacto1{
-    grid-area: article;
+.imagenes-sn{
     display: flex;
-    flex-direction: column;
-    font-size: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
-.iconoc{
-    max-width: 40px;
-    margin-right: 5px;
-}
+
 
 
 /*New letter*/
@@ -276,21 +267,24 @@ CONTROL + F*/
 .NewLetter{
     background-color: #ffffff;
     display: grid;
-    grid-template: repeat(5, 20%);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
     margin: 10%;
+    border-radius: 3rem 0;
 }
 .nombre{
-    grid-column: span 2;
-    grid-row-start: 1 ;
+    grid-row-start: 2 ;
+    grid-column-start: 2;
+    
 }
 .mail{
-    grid-row-start: 2;
-    grid-column: span 2;
+    grid-row-start: 3;
+    grid-column-start: 2;
 }
 .fecha{
-    grid-row-start: 3;
-    grid-column: span 2;
+    grid-row-start: 4;
+    grid-column-start: 2;
 }
 .texto{
-    grid-column-start: 3;
-}
+    grid-column-start: 4;
+    }
