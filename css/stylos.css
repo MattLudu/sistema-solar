@@ -245,10 +245,6 @@ nav ul li {
 p{margin: 1px;}
 } 
 CONTROL + F*/
-
-
-
-
 /*SOBRE NOSOTRES*/
 .sobre-nos{
     font-size: 1.5rem;
@@ -259,9 +255,49 @@ CONTROL + F*/
     align-items: center;
     justify-content: space-around;
 }
-
-
-
+/*CONTACTANOS*/
+.contenedor-cont{
+    margin: 0px 1.5rem 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.contacto{
+    padding:0px 1.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.icono-cont{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.red-social{
+    font-family: 'Roboto';
+    font-size: 30px;
+    margin: 2px;
+    color: #000000;
+}
+iframe{
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+}
+.op-cont{
+    max-width: 300px;
+    max-height: 300px;
+    z-index: 0;
+}
+.op-cont1{
+    max-width: 300px;
+    max-height: 300px;
+    z-index: 0;
+    float: right;
+    margin-top: 10px;
+}
 /*New letter*/
 
 .NewLetter{
