@@ -86,7 +86,7 @@ h3 {
 
 .sidebar {
     width: 50px;
-    height: 100vh;
+    height: 280px;
     box-sizing: border-box;
     background-color: #0f0f0f;
     padding: 0.3rem;
@@ -123,7 +123,7 @@ p {
 div ul li {
     font-family: 'Comfortaa', cursive;
     text-align: center;
-    height: 10vh;
+    height: auto;
 }
 
 *::selection{
@@ -218,7 +218,7 @@ div ul li {
 
 /*EFECTOS Y CONTENIDO DEL NAV*/
 .sidebar:hover {
-    width: 120px;
+    width: 130px;
     border-radius: 2rem 0;
     cursor: url('../img/cohete-nav1.png'), auto;
 }
@@ -231,10 +231,7 @@ div ul li {
     color: rgb(255, 255, 255);
 }
 
-nav ul li {
-    border-bottom: 1px solid rgb(62, 62, 67);
-    padding: none;
-}
+
 
 .nombre_planeta {
     display: flex;
@@ -242,14 +239,15 @@ nav ul li {
 }
 
 .planeta {
-    margin: 2px;
+    margin: 10px;
     font-family: "roboto";
     color: white;
-    padding: 0.2rem;
+    padding: 0.2em;
 }
 
 .icono {
-    max-width: 40px;
+    max-width: 20px;
+    padding: 0px 10px;
 }
 
 /*MEDIA QUERY*/
@@ -425,5 +423,12 @@ iframe{
     .sidebar {
         position: sticky;
         top: 0;
-  }
+        height: 100vh;
+    }
+     div ul li {
+    height: 10vh;
+    }
+    .icono {
+        max-width: 40px;
+    }
 }
