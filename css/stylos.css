@@ -385,4 +385,45 @@ iframe{
 }
 
 
+
+/* Media Query para dispositivos de ancho máximo de 600px (móviles) */
+@media screen and (max-width: 600px) {
+    body {
+      
+      background-image: none; 
+      background-color: #f0f0f0; 
+    }
   
+    .All {
+      
+      grid-template-areas:
+        "header"
+        "nav"
+        "article"
+        "footer";
+      grid-template-columns: auto; 
+      border-radius: 0; 
+      padding: 10px; 
+    }
+  
+   
+  
+    
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    
+    .sidebar {
+        position: sticky;
+        top: 0;
+  }
+}
