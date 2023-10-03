@@ -300,27 +300,28 @@ iframe{
 }
 /*New letter*/
 
-.NewLetter{
-    background-color: #ffffff;
+.NewLetter {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+.container {
     display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(5, 20%);
-    margin: 10%;
-    border-radius: 3rem 0;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: auto; 
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+.filas {
+    font-family: 'Comfortaa', cursive;
+    margin: 20px;
+    text-align: justify;
 }
-.nombre{
-    grid-row-start: 2 ;
-    grid-column-start: 2;
-    
-}
-.mail{
-    grid-row-start: 3;
-    grid-column-start: 2;
-}
-.fecha{
-    grid-row-start: 4;
-    grid-column-start: 2;
-}
-.texto{
-    grid-column-start: 4;
-    }
