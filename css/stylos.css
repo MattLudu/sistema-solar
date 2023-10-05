@@ -26,8 +26,7 @@ body {
     margin: 1px 1.5rem;
     background-color: #ffffff;
     border-radius: 3rem 0;
-    min-height: 100%;
-    padding: 5px;
+    padding: 0px;
 }
 
 header {
@@ -200,6 +199,8 @@ div ul li {
     justify-content: space-evenly;
 }
 
+
+
 .info {
     display: flex;
     flex-direction: row;
@@ -251,15 +252,7 @@ div ul li {
     padding: 0px 10px;
 }
 
-/*MEDIA QUERY*/
-/* @media screen and (max-width: 900px){
- .info{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;}
-p{margin: 1px;}
-} 
-CONTROL + F*/
+
 
 /*SOBRE NOSOTRES*/
 .sobre-nos{
@@ -383,48 +376,40 @@ iframe{
     margin-top: 5%;
 }
 
-
+/*MEDIA QUERY*/
+/* @media screen and (max-width: 900px){
+ .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+p{margin: 1px;}
+} 
+CONTROL + F*/
 
 /* Media Query para dispositivos de ancho máximo de 600px (móviles) */
 @media screen and (max-width: 600px) {
-    body {
-      
-      background-image: none; 
-      background-color: #f0f0f0; 
-    }
-  
-    .All {
-      
-      grid-template-areas:
+    
+    .All {  
+        grid-template-columns:
         "header"
         "nav"
         "article"
         "footer";
-      grid-template-columns: auto; 
-      border-radius: 0; 
-      padding: 10px; 
+        grid-template-columns: 1fr;
     }
-  
-   
-  
-    
-    h1 {
-      font-size: 28px;
-    }
-  
-    h2 {
-      font-size: 24px;
-    }
-  
-    h3 {
-      font-size: 20px;
-    }
-  
-    
+    body{
+        background-image: none;
+        min-width: none;
+        min-height: none;
+    }   
     .sidebar {
         position: sticky;
         top: 0;
         height: 100vh;
+        width: 70px;
+    }
+    .sidebar:hover {
+        width: 150px;
     }
      div ul li {
     height: 10vh;
@@ -432,4 +417,53 @@ iframe{
     .icono {
         max-width: 40px;
     }
+    .img-prin{
+        max-width: none;
+        min-width: none;
+
+    }
+    .info-texto{
+        font-size: 30px;
+    }
+  
+    .info{
+        display: grid;
+        grid-template-areas: 
+        "img-prin"
+        "info-texto";
+        grid-template-columns: 1fr;
+                
+    }
+    .imagenes{
+        width: 200px;
+        height: auto;
+        margin: 50px auto 0 ;
+        overflow: hidden;
+    }
+    .imagenes ul{
+        display: flex;
+        padding: 0;
+        width: 300%;
+        animation: slide 15s infinite alternate ease-in-out;
+    }
+    .imagenes li{
+        list-style: none;
+        width: 100%;
+    }
+    .imagenes img{
+        width: 100%;
+    }
+    @keyframes slide {
+        0% {margin-left: 0%;}
+        30% {margin-left: 0%;}
+
+        35% {margin-left: -100%;}
+        65% {margin-left: -100%;}
+
+        70% {margin-left: -200%;}
+        95% {margin-left: -200%;}
+
+    }
+
+
 }
