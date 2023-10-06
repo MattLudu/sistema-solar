@@ -17,14 +17,15 @@ body {
 .All {
     display: grid;
     grid-template-areas:
-        "nav header"
-        "nav article"
-        "footer footer ";
+        "header header"
+        "article article"
+        "footer footer";
     grid-template-columns: 3rem auto;
     margin: 1px 1.5rem;
     background-color: #ffffff;
     border-radius: 3rem 0;
     padding: 0px;
+
 }
 
 header {
@@ -35,10 +36,10 @@ header {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
-    grid-area: nav;
+    z-index: 1;
     font-size: 1.5rem;
     border-bottom: 1px solid rgb(62, 62, 67);
 }
@@ -90,7 +91,6 @@ h3 {
     overflow: hidden;
     border-radius: 2rem;
     transition: 500ms ease;
-    z-index: 1;
 }
 
 article {
