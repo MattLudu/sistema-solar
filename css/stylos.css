@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(../img/galaxy-espacio-textura-fondo.jpg);
+    background-image: url(/img/galaxy-espacio-textura-fondo.webp);
     background-size: cover;
     background-position: top;
     background-repeat: repeat;
@@ -48,7 +48,7 @@ h1 {
     font-family: 'Martel', sans-serif;
     font-size: 40px;
     display: inline-block;
-    background-image: url(../img/Titulo.jpg);
+    background-image: url(/img/Titulo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-    background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.jpg);
+    background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.webp);
     background-size: cover;
     background-position: bottom;
     color: white;
@@ -71,7 +71,7 @@ h2 {
 }
 
 h3 {
-    background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.jpg);
+    background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.webp);
     background-size: cover;
     background-position: center;
     color: white;
@@ -144,7 +144,7 @@ div ul li {
 .menu .botones:hover {
     color: rgb(255, 255, 255);
     transform: rotate(10deg);
-    background-image: url(../img/button.jpg);
+    background-image: url(../img/button.webp);
     background-size: cover;
     background-position: top;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -220,12 +220,12 @@ div ul li {
 .sidebar:hover {
     width: 150px;
     border-radius: 2rem 0;
-    cursor: url('../img/cohete-nav1.png'), auto;
+    cursor: url('../img/cohete-nav1.webp'), auto;
 }
 
 .sidebar a {
     color: rgb(146, 41, 243);
-    cursor: url('../img/cohete-sel.png'), auto;
+    cursor: url('../img/cohete-sel.webp'), auto;
 }
 
 .sidebar a:link {
@@ -346,7 +346,7 @@ iframe {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    cursor: url('../img/cohete-nav.png'), auto;
+    cursor: url('../img/cohete-nav.webp'), auto;
 }
 
 .filas {
@@ -354,7 +354,7 @@ iframe {
     margin: 1rem;
     text-align: justify;
     font-size: large;
-    cursor: url('../img/cohete-nav.png'), auto;
+    cursor: url('../img/cohete-nav1.webp'), auto;
 }
 
 .boton {
@@ -363,7 +363,7 @@ iframe {
     font-size: x-large;
     text-align: center;
     grid-column-end: 3;
-    cursor: url('../img/cohete-sel.png'), auto;
+    cursor: url('../img/cohete-sel.webp'), auto;
 }
 
 .art-nl {
