@@ -164,15 +164,11 @@ div ul li {
 
 /*ESTILO DEL ARTICLE*/
 .img-prin {
-    max-width: 500px;
-    max-height: 500px;
-    min-width: 400px;
-    min-height: 300px;
+    width: 50%;
     border-radius: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
-
-}
+    }
 
 .imagen1 {
     width: 100%;
@@ -186,10 +182,8 @@ div ul li {
 }
 
 .imagen2 {
-    max-width: 300px;
-    max-height: 300px;
-    min-width: 200px;
-    min-height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -207,6 +201,12 @@ div ul li {
     justify-content: space-evenly;
     font-size: 35px;
     margin: 2rem;
+}
+.info-texto{
+    display: grid;
+    place-items: center;
+    width: 80%;
+    font-size: larger;
 }
 
 .caracteristicas {
@@ -396,22 +396,37 @@ iframe {
             "article"
             "footer";
         grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 10% ;
     }
-
-    body {
-        background-image: none;
-        min-width: none;
-        min-height: none;
+    .info-texto{
+        width: auto;
+        margin-top: 5%;
+        font-size: large;
     }
-
+    p{
+         font-size: small;
+    }
+    .caracteristicas{
+        font-size: small;
+    }
     nav {
         font-size: 1rem;
     }
-
-    .sidebar {
+    .botones{
+        font-size: x-small;
+    }
+    .menu{
+        align-items: center;
+        justify-content: right;
+    }
+    .menu a{
+        margin: 0;
+    }
+   .sidebar {
         position: sticky;
         top: 0;
-        height: 100vh;
+        height: 94vh;
         width: 45px;
     }
 
@@ -424,17 +439,7 @@ iframe {
     }
 
     .icono {
-        max-width: 40px;
-    }
-
-    .img-prin {
-        max-width: none;
-        min-width: none;
-
-    }
-
-    .info-texto {
-        font-size: 30px;
+        max-width: 30px;
     }
 
     .info {
@@ -445,29 +450,33 @@ iframe {
         grid-template-columns: 1fr;
 
     }
+    .img-prin{
+        width: 100%;
+    }
 
     .imagenes {
-        width: 200px;
-        height: auto;
+        width: 300px;
+        height: 300px;
         margin: 50px auto 0;
         overflow: hidden;
     }
 
-    .imagenes ul {
+    .imagenes-carrusel ul {
         display: flex;
         padding: 0;
         width: 300%;
         animation: slide 15s infinite alternate ease-in-out;
     }
 
-    .imagenes li {
+    .imagenes-carrusel li {
         list-style: none;
         width: 100%;
     }
 
-    .imagenes img {
+    .imagenes-carrusel img {
         width: 100%;
     }
+   
 
     @keyframes slide {
         0% {
