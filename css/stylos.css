@@ -123,6 +123,24 @@ div ul li {
 *::selection {
     background-color: rgba(145, 41, 243, 0.3);
 }
+footer .button{
+    text-align: center;
+    margin: 0 50px 0;
+    font-size: 3rem;
+    color: black;
+}
+footer .button:hover{
+    color: rgb(255, 255, 255);
+    transform: rotate(5deg);
+    background-image: url(../img/button.webp);
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    display: flex;
+    max-width: 250px;
+    max-height: 100px;
+    text-align: center;
+}
 
 /*MENU*/
 .menu a {
