@@ -9,9 +9,8 @@
 
 body {
     background-image: url(/img/galaxy-espacio-textura-fondo.webp);
-    background-size: cover;
     background-position: top;
-    background-repeat: repeat;
+    background-repeat:repeat;
 }
 
 .All {
@@ -25,7 +24,6 @@ body {
     background-color: #ffffff;
     border-radius: 3rem 0;
     padding: 0px;
-
 }
 
 header {
@@ -67,7 +65,6 @@ h2 {
     font-size: 35px;
     padding: 5px 0rem 5px 80px;
     text-transform: uppercase;
-
 }
 
 h3 {
@@ -159,16 +156,15 @@ div ul li {
 .barra {
     cursor: default;
 }
-
 /*INDEX*/
 
 /*ESTILO DEL ARTICLE*/
 .img-prin {
-    width: 50%;
+    width: 30%;
     border-radius: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    }
+}
 
 .imagen1 {
     width: 100%;
@@ -186,7 +182,6 @@ div ul li {
     height: 300px;
     border-radius: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .imagenes {
@@ -202,6 +197,7 @@ div ul li {
     font-size: 35px;
     margin: 2rem;
 }
+
 .info-texto{
     display: grid;
     place-items: center;
@@ -246,7 +242,6 @@ div ul li {
     max-width: 25px;
     padding: 1rem 0.5rem;
 }
-
 
 
 /*SOBRE NOSOTRES*/
@@ -392,7 +387,6 @@ iframe {
     .All {
         grid-template-columns:
             "header"
-            "nav"
             "article"
             "footer";
         grid-template-columns: 1fr;
