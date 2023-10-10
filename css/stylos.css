@@ -401,7 +401,12 @@ iframe {
 
 /* Media Query para dispositivos de ancho máximo de 600px (móviles) */
 @media screen and (max-width: 600px) {
+    
+    body{
+        display: flex;
+       
 
+    }
     .All {
         grid-template-columns:
             "header"
@@ -409,7 +414,7 @@ iframe {
             "footer";
         grid-template-columns: 1fr;
         width: 80%;
-        margin: 0 10% ;
+        margin: 0 10% 0 0;
     }
     .info-texto{
         width: auto;
