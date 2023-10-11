@@ -27,10 +27,11 @@ body {
     padding: 0px;
 }
 .content{ 
-    margin: 5px 5%;
+    margin: 5px 6vh;
     background-color: #ffffff;
-    border-radius: 3rem 0;
-    padding: 20px;
+    border-radius: 3rem ;
+    padding: 6vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     
 }
 header {
@@ -41,21 +42,22 @@ header {
     background-color: #ffffff;
     border-radius: 3rem 0;
     padding: 0px;
-    margin: 5px 5%;
-}
+    margin: 5px 6vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    }
 
 nav {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-    font-size: 1.5rem;
+    font-size:3vh;
     border-bottom: 1px solid rgb(62, 62, 67);
 }
 
 h1 {
     font-family: 'Martel', sans-serif;
-    font-size: 40px;
+    font-size: 10vh;
     display: inline-block;
     background-image: url(/img/Titulo.webp);
     background-repeat: no-repeat;
@@ -67,14 +69,21 @@ h1 {
 }
 
 h2 {
-    background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.webp);
+    /*background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.webp);
     background-size: cover;
     background-position: bottom;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 2px #3f0d5c75;
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
-    padding: 5px 0rem 5px 30px;
+    padding: 5px 0rem 5px 30px;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 8vh;
+    display: inline-block;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20%;
     text-transform: uppercase;
 }
 
@@ -100,8 +109,8 @@ h3 {
 }
 
 .sidebar {
-    width: 40px;
-    height: 36rem;
+    width: 6vh;
+    height: auto;
     box-sizing: border-box;
     background-color: #0f0f0f;
     justify-content: center;
@@ -162,6 +171,36 @@ footer .button:hover{
     max-height: 100px;
     text-align: center;
 }
+.sol{
+    background-image: url(/img/sol.webp);
+}
+.mercurio{
+    background-image: url(/img/mercurio.webp);
+}
+.venus{
+    background-image: url(/img/venus.webp);
+}
+.tierra{
+    background-image: url(/img/Tierra.webp);
+}
+.marte{
+    background-image: url(/img/Marte.webp);
+}
+.jupiter{
+    background-image: url(/img/jupiter1.webp);
+}
+.saturno{
+    background-image: url(/img/Saturno.webp);
+}
+.urano{
+    background-image: url(/img/Urano.webp);
+}
+.neptuno{
+    background-image: url(/img/Neptuno.webp);
+}
+.pluton{
+    background-image: url(/img/Pluton.webp);
+}
 
 /*MENU*/
 .menu a {
@@ -189,7 +228,7 @@ footer .button:hover{
 
 .botones {
     font-family: "Comfortaa";
-    font-size: larger;
+    font-size: 2vh;
 }
 
 .barra {
@@ -253,7 +292,7 @@ footer .button:hover{
 
 /*EFECTOS Y CONTENIDO DEL NAV*/
 .sidebar:hover {
-    width: 150px;
+    width: 20vh;
     border-radius: 2rem 0;
     cursor: url('../img/cohete-nav1.webp'), auto;
 }
@@ -278,8 +317,8 @@ footer .button:hover{
 }
 
 .icono {
-    max-width: 25px;
-    padding: 1rem 0.5rem;
+    max-width: 4vh;
+    padding: 2vh 1vh 2vh 1vh;
 }
 
 
