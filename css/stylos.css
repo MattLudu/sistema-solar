@@ -8,9 +8,10 @@
 }
 
 body {
-    background-image: url(/img/galaxy-espacio-textura-fondo.webp);
+    background-image: url(../img/galaxy-espacio-textura-fondo.webp);
     background-position: top;
     background-repeat:repeat;
+    background-size: contain;
 }
 
 .All {
@@ -468,7 +469,7 @@ iframe {
    .sidebar {
         position: sticky;
         top: 0;
-        height: 94vh;
+        height: 70vh;
         width: 12%;
     }
 
