@@ -8,8 +8,9 @@
 }
 
 body {
-    background-image: url(/img/galaxy-espacio-textura-fondo.webp);
+    background-image: url(../img/galaxy-espacio-textura-fondo.webp);
     background-position: top;
+    background-size: contain;
     background-repeat:repeat;
 }
 
