@@ -44,8 +44,7 @@ header {
     padding: 0px;
     margin: 5px 6vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-    }
-
+}
 nav {
     position: fixed;
     top: 0;
@@ -59,7 +58,7 @@ h1 {
     font-family: 'Martel', sans-serif;
     font-size: 10vh;
     display: inline-block;
-    background-image: url(/img/Titulo.webp);
+    background-image: url(../img/Titulo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -90,7 +89,7 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
     display: inline-block;
-    background-image: url(/img/Titulo.webp);
+    background-image: url(../img/Titulo.webp);
     background-repeat: repeat;
     background-position: center;
     -webkit-background-clip: text;
@@ -171,34 +170,34 @@ footer .button:hover{
     text-align: center;
 }
 .sol{
-    background-image: url(/img/sol.webp);
+    background-image: url(../img/sol.webp);
 }
 .mercurio{
-    background-image: url(/img/mercurio.webp);
+    background-image: url(../img/mercurio.webp);
 }
 .venus{
-    background-image: url(/img/venus.webp);
+    background-image: url(../img/venus.webp);
 }
 .tierra{
-    background-image: url(/img/Tierra.webp);
+    background-image: url(../img/Tierra.webp);
 }
 .marte{
-    background-image: url(/img/Marte.webp);
+    background-image: url(../img/Marte.webp);
 }
 .jupiter{
-    background-image: url(/img/jupiter1.webp);
+    background-image: url(../img/jupiter1.webp);
 }
 .saturno{
-    background-image: url(/img/Saturno.webp);
+    background-image: url(../img/Saturno.webp);
 }
 .urano{
-    background-image: url(/img/Urano.webp);
+    background-image: url(../img/Urano.webp);
 }
 .neptuno{
-    background-image: url(/img/Neptuno.webp);
+    background-image: url(../img/Neptuno.webp);
 }
 .pluton{
-    background-image: url(/img/Pluton.webp);
+    background-image: url(../img/Pluton.webp);
 }
 .nave{
     display: grid;
