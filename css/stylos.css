@@ -464,17 +464,6 @@ iframe {
 /* Media Query para dispositivos de ancho máximo de 600px (móviles) */
 @media screen and (max-width: 600px) {
     
-    body{
-       display: flex;
-    }
-    .index{
-            display: flex;
-            flex-direction: column;
-            width: 87%;
-    }
-    .content{
-        margin-left: 0;
-    }
     h1{
         font-size: 35px;
         margin-left: 10px;
@@ -507,15 +496,16 @@ iframe {
     .menu a{
         margin: 0;
     }
-   .sidebar {
-        position: sticky;
-        top: 0;
-        height: 94vh;
-        width: 12%;
+    .index{
+        margin:0 1.2vw;
+    }
+    .sidebar {
+        height: 85vh;
+        width: 11.5vw;
     }
 
     .sidebar:hover {
-        width: 150px;
+        width: 30vw;
     }
 
     div ul li {
@@ -523,7 +513,7 @@ iframe {
     }
 
     .icono {
-        max-width: 30px;
+        max-width: 8vw;
     }
 
     .info {
@@ -537,14 +527,18 @@ iframe {
     .img-prin{
         width: 100%;
     }
-
+    .content{
+        padding: 6vh;
+    }
     .imagenes {
-        width: 300px;
-        height: 300px;
-        margin: 50px auto 0;
+        width: 200px;
+        height: 200px;
         overflow: hidden;
     }
-
+    .imagen2{
+        width: 200px;
+        height: 200px;
+    }
     .imagenes-carrusel ul {
         display: flex;
         padding: 0;
