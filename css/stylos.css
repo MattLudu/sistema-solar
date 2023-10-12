@@ -200,6 +200,10 @@ footer .button:hover{
 .pluton{
     background-image: url(/img/Pluton.webp);
 }
+.nave{
+    display: grid;
+    place-items: center;
+}
 
 /*MENU*/
 .menu a {
