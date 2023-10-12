@@ -44,8 +44,7 @@ header {
     padding: 0px;
     margin: 5px 6vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-    }
-
+}
 nav {
     position: fixed;
     top: 0;
@@ -59,7 +58,7 @@ h1 {
     font-family: 'Martel', sans-serif;
     font-size: 10vh;
     display: inline-block;
-    background-image: url(/img/Titulo.webp);
+    background-image: url(../img/Titulo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -90,7 +89,7 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
     display: inline-block;
-    background-image: url(/img/Titulo.webp);
+    background-image: url(../img/Titulo.webp);
     background-repeat: repeat;
     background-position: center;
     -webkit-background-clip: text;
