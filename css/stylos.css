@@ -11,52 +11,35 @@ body {
     background-image: url(../img/galaxy-espacio-textura-fondo.webp);
     background-position: top;
     background-size: contain;
-    background-repeat:repeat;
+    background-repeat: repeat;
 }
 
-.All {
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "article article"
-        "footer footer";
-    grid-template-columns: 3rem auto;
+.content {
+    margin: 5px 2rem;
     background-color: #ffffff;
-    margin: 5px 2.3%;
-    border-radius: 3rem 0;
-    padding: 0px;
+    border-radius: 3rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    justify-content: center;
 }
-.content{ 
-    margin: 5px 6vh;
-    background-color: #ffffff;
-    border-radius: 3rem ;
-    padding: 6vh;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    
-}
+
 header {
     font-size: 15px;
-    padding-right: 2rem;
     text-decoration: none;
-    grid-area: header;
-    background-color: #ffffff;
-    border-radius: 3rem 0;
-    padding: 0px;
-    margin: 5px 6vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
+
 nav {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-    font-size:3vh;
-    border-bottom: 1px solid rgb(62, 62, 67);
+    font-size: 3vh;
 }
 
 h1 {
-    font-family: 'Martel', sans-serif;
+    margin-left: 80px;
     font-size: 10vh;
+    font-family: 'Martel', sans-serif;
     display: inline-block;
     background-image: url(../img/Titulo.webp);
     background-repeat: no-repeat;
@@ -64,20 +47,12 @@ h1 {
     background-position: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 80px;
+
 }
 
 h2 {
-    /*background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.webp);
-    background-size: cover;
-    background-position: bottom;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke: 2px #3f0d5c75;
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    padding: 5px 0rem 5px 30px;*/
-    font-family: 'Roboto', sans-serif;
     font-size: 8vh;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     background-position: center;
     -webkit-background-clip: text;
@@ -86,24 +61,17 @@ h2 {
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
+    margin-left: 80px;
     font-size: 35px;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
     background-image: url(../img/Titulo.webp);
     background-repeat: repeat;
     background-position: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 80px;
+
     background-position: bottom;
-    /*background: linear-gradient(transparent, rgb(255, 255, 255)), url(../img/galaxy-espacio-textura-fondo.webp);
-    background-size: cover;
-    background-position: center;
-    color: rgb(0, 0, 0);
-    -webkit-text-stroke: 2px #3f0d5c75;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    padding: 5px 0rem 5px 80px; */
 }
 
 .sidebar {
@@ -114,26 +82,20 @@ h3 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 2rem;
+    border-radius: 3rem;
     transition: 500ms ease;
 }
 
 article {
-    grid-area: article;
-    /*mantiene la forma del MAINback*/
     z-index: 0;
     overflow: hidden;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
     margin: 10px 0 10px 0;
     font-size: 30px;
-}
-
-footer {
-    grid-area: footer;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -151,58 +113,58 @@ div ul li {
 *::selection {
     background-color: rgba(145, 41, 243, 0.3);
 }
-footer .button{
-    text-align: center;
-    margin: 0 50px 0;
-    font-size: 3rem;
-    color: black;
-}
-footer .button:hover{
-    color: rgb(255, 255, 255);
-    transform: rotate(5deg);
-    background-image: url(../img/button.webp);
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    display: flex;
-    max-width: 250px;
-    max-height: 100px;
-    text-align: center;
-}
-.sol{
+
+.sol {
     background-image: url(../img/sol.webp);
 }
-.mercurio{
+
+.mercurio {
     background-image: url(../img/mercurio.webp);
 }
-.venus{
+
+.venus {
     background-image: url(../img/venus.webp);
 }
-.tierra{
+
+.tierra {
     background-image: url(../img/Tierra.webp);
 }
-.marte{
+
+.marte {
     background-image: url(../img/Marte.webp);
 }
-.jupiter{
+
+.jupiter {
     background-image: url(../img/jupiter1.webp);
 }
-.saturno{
+
+.saturno {
     background-image: url(../img/Saturno.webp);
 }
-.urano{
+
+.urano {
     background-image: url(../img/Urano.webp);
 }
-.neptuno{
+
+.neptuno {
     background-image: url(../img/Neptuno.webp);
 }
-.pluton{
+
+.pluton {
     background-image: url(../img/Pluton.webp);
 }
-.nave{
+.QS{
+    background-image: url(../img/galaxy-espacio-textura-fondo.webp)
+}
+.CM{
+    background-image: url(../img/galaxy-espacio-textura-fondo.webp)
+}
+.nave {
+    margin: 5px;
     display: grid;
     place-items: center;
 }
+
 
 /*MENU*/
 .menu a {
@@ -211,9 +173,9 @@ footer .button:hover{
 }
 
 .menu {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: right;
     text-align: center;
 }
@@ -236,6 +198,8 @@ footer .button:hover{
 .barra {
     cursor: default;
 }
+
+
 /*INDEX*/
 
 /*ESTILO DEL ARTICLE*/
@@ -270,24 +234,22 @@ footer .button:hover{
 }
 
 .info {
+    font-size: 35px;
+    margin: 2rem;
     display: flex;
     flex-direction: row;
     box-sizing: content-box;
     justify-content: space-evenly;
-    font-size: 35px;
-    margin: 2rem;
 }
 
-.info-texto{
+.info-texto {
+    width: 80%;
     display: grid;
     place-items: center;
-    width: 80%;
     font-size: larger;
 }
 
 .caracteristicas {
-    display: flex;
-    justify-content: space-evenly;
     font-size: 25px;
 }
 
@@ -295,7 +257,7 @@ footer .button:hover{
 /*EFECTOS Y CONTENIDO DEL NAV*/
 .sidebar:hover {
     width: 20vh;
-    border-radius: 2rem 0;
+    border-radius: 3rem;
     cursor: url('../img/cohete-nav1.webp'), auto;
 }
 
@@ -401,7 +363,7 @@ iframe {
     float: right;
 }
 
-/*NEW LETTER*/
+/*NEWSLETTER*/
 .NewLetter {
     display: flex;
     justify-content: center;
@@ -463,42 +425,52 @@ iframe {
 
 /* Media Query para dispositivos de ancho máximo de 600px (móviles) */
 @media screen and (max-width: 600px) {
-    
-    h1{
+
+    h1 {
         font-size: 35px;
         margin-left: 10px;
     }
-    h3{
+
+    h3 {
         font-size: large;
         margin-left: 10px;
     }
-    .info-texto{
+
+    .info-texto {
         width: auto;
         margin-top: 5%;
         font-size: large;
     }
-    p{
-         font-size: small;
-    }
-    .caracteristicas{
+
+    p {
         font-size: small;
     }
+
+    .caracteristicas {
+        font-size: small;
+    }
+
     nav {
         font-size: 1rem;
     }
-    .botones{
+
+    .botones {
         font-size: x-small;
     }
-    .menu{
+
+    .menu {
         align-items: center;
         justify-content: right;
     }
-    .menu a{
+
+    .menu a {
         margin: 0;
     }
-    .index{
-        margin:0 1.2vw;
+
+    .index {
+        margin: 0 1.2vw;
     }
+
     .sidebar {
         height: 85vh;
         width: 11.5vw;
@@ -524,21 +496,26 @@ iframe {
         grid-template-columns: 1fr;
 
     }
-    .img-prin{
+
+    .img-prin {
         width: 100%;
     }
-    .content{
-        padding: 6vh;
+
+    .content {
+        padding: 3vh;
     }
+
     .imagenes {
         width: 200px;
         height: 200px;
         overflow: hidden;
     }
-    .imagen2{
+
+    .imagen2 {
         width: 200px;
         height: 200px;
     }
+
     .imagenes-carrusel ul {
         display: flex;
         padding: 0;
@@ -554,7 +531,7 @@ iframe {
     .imagenes-carrusel img {
         width: 100%;
     }
-   
+
 
     @keyframes slide {
         0% {
