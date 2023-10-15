@@ -585,5 +585,31 @@ iframe {
 .contacto{
     padding: 0 0 1.5rem;
 }
+/*SOBRE NOSOTRES*/
+.sobre-nos {
+    font-size: 15px;
+}
+
+.imagenes-sn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: none;
+    overflow: none;
+}
+
+.astro {
+    display: flex;
+    flex-direction: row;
+    height: 55%;
+    width: auto;
+    transition: 500ms;
+    object-fit: cover;
+}
+
+.astro:hover {
+    transform: scale(1.3);
+}
 
 }
