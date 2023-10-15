@@ -338,8 +338,9 @@ div ul li {
 .red-social {
     font-family: 'Roboto';
     font-size: 30px;
-    margin: 2px;
+    margin: 10px;
     color: #000000;
+    
 }
 
 iframe {
@@ -425,7 +426,7 @@ iframe {
 
 /* Media Query para dispositivos de ancho máximo de 600px (móviles) */
 @media screen and (max-width: 600px) {
-
+/*todo e index*/
     h1 {
         font-size: 40px;
         margin-left: 10px;
@@ -563,5 +564,26 @@ iframe {
 
     }
 
+    /*CONTACTANOS*/
+
+.contenedor-cont {
+    flex-direction: column;
+}
+
+.red-social {
+    font-size: 15px;
+}
+
+iframe {
+    max-width: 60vw;
+    height: auto ;
+}
+.icono-cont {
+    max-width: 30px;
+    max-height: 30px;
+}
+.contacto{
+    padding: 0 0 1.5rem;
+}
 
 }
