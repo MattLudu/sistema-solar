@@ -599,37 +599,10 @@ iframe {
 }
 
 .contenedor-nl {
-    display: grid;
     grid-template-rows: repeat(3, 10vh);
     grid-template-columns: repeat(2, 40vw);
     gap: 5px;
     align-items: center;
-    justify-content: center;
     max-width: none;
-    padding: 1vw;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    cursor: url('../img/cohete-nav.webp'), auto;
-}
-
-.filas {
-    font-family: 'Comfortaa', cursive;
-    margin: 1rem;
-    text-align: justify;
-    font-size: large;
-    cursor: url('../img/cohete-nav1.webp'), auto;
-}
-
-.boton {
-    font-family: 'Comfortaa', cursive;
-    margin: 20px;
-    font-size: x-large;
-    text-align: center;
-    grid-column-end: 3;
-    cursor: url('../img/cohete-sel.webp'), auto;
-}
-
-
+    }
 }
