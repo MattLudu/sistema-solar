@@ -426,7 +426,7 @@ iframe {
 @media screen and (max-width: 600px) {
 
     h1 {
-        font-size: 5vh;
+        font-size: 45px;
         margin-left: 10px;
     }
 
@@ -435,7 +435,7 @@ iframe {
         margin-left: 10px;
     }
     h2{
-        font-size: 3vh;
+        font-size: 4vh;
     }
 
     .info-texto {
