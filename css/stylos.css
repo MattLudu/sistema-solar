@@ -101,7 +101,6 @@ section {
 p {
     font-family: 'Comfortaa', cursive;
     margin: 15px;
-    text-align: justify;
 }
 
 div ul li {
@@ -427,13 +426,16 @@ iframe {
 @media screen and (max-width: 600px) {
 
     h1 {
-        font-size: 35px;
+        font-size: 5vh;
         margin-left: 10px;
     }
 
     h3 {
         font-size: large;
         margin-left: 10px;
+    }
+    h2{
+        font-size: 3vh;
     }
 
     .info-texto {
@@ -529,7 +531,7 @@ iframe {
     }
 
     .imagenes-carrusel img {
-        width: 100%;
+        width: 80%;
     }
 
 
