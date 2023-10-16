@@ -153,12 +153,15 @@ div ul li {
 .pluton {
     background-image: url(../img/Pluton.webp);
 }
-.QS{
+
+.QS {
     background-image: url(../img/galaxy-espacio-textura-fondo.webp)
 }
-.CM{
+
+.CM {
     background-image: url(../img/galaxy-espacio-textura-fondo.webp)
 }
+
 .nave {
     margin: 5px;
     display: grid;
@@ -340,7 +343,7 @@ div ul li {
     font-size: 30px;
     margin: 10px;
     color: #000000;
-    
+
 }
 
 iframe {
@@ -365,62 +368,163 @@ iframe {
 }
 
 /*NEWSLETTER*/
-.NewLetter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-}
-
-.contenedor-nl {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    justify-content: center;
-    max-width: 400px;
-    padding: 2.5rem;
-    background-color: #fff;
-    border-radius: 10px;
+.content-nl {
+    box-sizing: border-box;
+    border-radius: 1rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    cursor: url('../img/cohete-nav.webp'), auto;
-}
-
-.filas {
-    font-family: 'Comfortaa', cursive;
-    margin: 1rem;
-    text-align: justify;
-    font-size: large;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    padding: 40px;
     cursor: url('../img/cohete-nav1.webp'), auto;
+
 }
 
-.boton {
+.formulario {
     font-family: 'Comfortaa', cursive;
-    margin: 20px;
-    font-size: x-large;
-    text-align: center;
-    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
     cursor: url('../img/cohete-sel.webp'), auto;
 }
-.op-nl1 {
-    max-width: 100%;
-    max-height: 75%;
-    z-index: 0;
-    float: right;
+
+.formulario__grupo-input {
+    position: relative;
 }
 
-.op-nl2 {
-    max-width: 50%;
-    max-height: 50%;
-    z-index: 0;
-    float: left;
-    margin-top: 5%;
+.formulario__input {
+    font-family: 'Comfortaa', cursive;
+    cursor: url('../img/cohete-sel.webp'), auto;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.2);
+    border: 1px solid transparent;
+    border-radius: 1rem 0rem;
+    height: 30px;
+    line-height: 30px;
+    transition: 300ms ease all;
 }
+
+.formulario__input:hover {
+    border: 1px solid rgb(62, 18, 104);
+    outline: none;
+    box-shadow: 3px 6px 10px rgba(211, 211, 211, 0.3);
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    max-width: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    z-index: 2;
+    font-size: 10px;
+    opacity: 0;
+    cursor: url('../img/cohete-sel.webp'), auto;
+}
+
+.icono__error {
+    max-width: 20px;
+    position: relative;
+    font-size: 10px;
+}
+
+.formulario__checkbox {
+    margin-right: 10px;
+}
+
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-boton {
+    grid-column: span 2;
+}
+
+.formulario__mensaje {
+    height: 3vh;
+    background-color: red;
+    padding: 5px 20px;
+    border-radius: 1rem 0rem;
+    display: none;
+}
+
+.formulario__mensaje-active {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0px;
+}
+
+.formulario__grupo-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__boton {
+    height: 40px;
+    line-height: 40px;
+    width: 30%;
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0rem 1rem;
+    cursor: url('../img/cohete-sel.webp'), auto;
+    transition: 500ms ease all;
+}
+
+.formulario__boton:hover {
+    border: 2px solid rgb(146, 41, 243);
+    ;
+    box-shadow: 3px 6px 10px rgba(211, 211, 211, 1);
+}
+
+.formulario__mensaje-enviado {
+    font-size: 14px;
+    color: rgb(53, 187, 53);
+    display: none;
+}
+
+.formulario__mensaje-enviado-activo {
+    display: block;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 1px solid red;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: red;
+}
+
 
 /* Media Query para dispositivos de ancho máximo de 600px (móviles) */
 @media screen and (max-width: 600px) {
-/*todo e index*/
+
+    /*todo e index*/
     h1 {
         font-size: 40px;
         margin-left: 10px;
@@ -430,7 +534,8 @@ iframe {
         font-size: large;
         margin-left: 10px;
     }
-    h2{
+
+    h2 {
         font-size: 4vh;
     }
 
@@ -560,49 +665,53 @@ iframe {
 
     /*CONTACTANOS*/
 
-.contenedor-cont {
-    flex-direction: column;
-}
+    .contenedor-cont {
+        flex-direction: column;
+    }
 
-.red-social {
-    font-size: 15px;
-}
+    .red-social {
+        font-size: 15px;
+    }
 
-iframe {
-    max-width: 60vw;
-    height: auto ;
-}
-.icono-cont {
-    max-width: 30px;
-    max-height: 30px;
-}
-.contacto{
-    padding: 0 0 1.5rem;
-}
-/*SOBRE NOSOTRES*/
-.sobre-nos {
-    font-size: 15px;
-}
+    iframe {
+        max-width: 60vw;
+        height: auto;
+    }
 
-.astro {
-    display: flex;
-    flex-direction: row;
-    height: 55%;
-    width: auto;
-}
+    .icono-cont {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .contacto {
+        padding: 0 0 1.5rem;
+    }
+
+    /*SOBRE NOSOTRES*/
+    .sobre-nos {
+        font-size: 15px;
+    }
+
+    .astro {
+        display: flex;
+        flex-direction: row;
+        height: 55%;
+        width: auto;
+    }
 
 
-/*NEWSLETTER*/
-.NewLetter {
-    min-height: none;
-    width: 72vw;
-}
+    /*NEWSLETTER*/
+    .formulario {
+        grid-template-columns: 1fr;
+    }
 
-.contenedor-nl {
-    grid-template-rows: repeat(3, 10vh);
-    grid-template-columns: repeat(2, 40vw);
-    gap: 5px;
-    align-items: center;
-    max-width: none;
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-boton {
+        grid-column: 1;
+    }
+
+    .formulario__boton {
+        width: 100%;
     }
 }

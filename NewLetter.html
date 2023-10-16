@@ -26,24 +26,74 @@
             <a class="barra">|</a>
             <a class="botones" href="NewLetter.html">Newsletter</a>
         </div>
-        <br>
-        <br>
         <h1 class="animate__animated animate__fadeInDown">Suscribite al Newsletter</h1>
     </header>
-    <br>
-    <article class="content">
-        <img class="op-nl1" src="img/astro-pc.webp">
-        <div class="NewLetter">
-            <div class="contenedor-nl">
-                <div class="filas">Nombre:</div><input class="filas" type="text">
-                <div class="filas">Apellido:</div><input class="filas" type="text">
-                <div class="filas">Email:</div><input class="filas" type="text">
-                <div class="filas">Fecha de nacimiento:</div><input class="filas" type="date">
-                <input class="boton" type="submit" value="Enviar">
-            </div>
+    
+    <div class="content">
+        <br>
+        
+        <div class="content-nl">
+            <form action="" class="formulario" id="formulario">
+
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre">
+                        <img class="formulario__validacion-estado" src="img/cancelar.png" alt="">
+                        <p class="formulario__input-error">el Nombre puede contener solo letras.</p>
+                    </div>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="apellido" id="apellido">
+                        <img class="formulario__validacion-estado" src="img/cancelar.png" alt="">
+                        <p class="formulario__input-error">el Apellido puede contener solo letras.</p>
+                    </div>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__email">
+                    <label for="email" class="formulario__label">Email:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="email" id="email"
+                            placeholder="ejemplo@gmail.com">
+                        <img class="formulario__validacion-estado" src="img/cancelar.png" alt="">
+                        <p class="formulario__input-error">Email no valido</p>
+                    </div>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__fecha">
+                    <label for="fecha" class="formulario__label">Fecha de nacimiento</label>
+                    <div class="formulario__grupo-input">
+                        <input type="date" class="formulario__input" name="fecha" id="fecha">
+                    </div>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"> Acepto
+                        Terminos y Condiciones
+                    </label>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><img class="icono__error" src="img/quejarse.png" alt="">Error: Por favor revise la información.
+                    </p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-boton">
+                    <button type="submit" class="formulario__boton">Enviar</button>
+                    <p class="formulario__mensaje-enviado" id="formulario__mensaje-enviado">Los datos se enviaron
+                        correctamente!</p>
+                </div>
+
+            </form>
         </div>
-        <img class="op-nl2" src="img/astro-msg.webp">
-    </article>
+        <br>
+        <br>
+    </div>
+    <script src="formulario.js"></script>
     <br>
     <footer>
         <h4>Hola soy un footer</h4>
