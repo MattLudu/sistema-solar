@@ -35,56 +35,56 @@
         <div class="content-nl">
             <form action="" class="formulario" id="formulario">
 
-                <div class="formulario__grupo" id="grupo__nombre">
-                    <label for="nombre" class="formulario__label">Nombre:</label>
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="nombre" id="nombre">
-                        <img class="formulario__validacion-estado" src="img/cancelar.png" alt="">
-                        <p class="formulario__input-error">el Nombre puede contener solo letras.</p>
+                <div class="formularioGrupo" id="grupoNombre">
+                    <label for="nombre" class="formularioLabel">Nombre:</label>
+                    <div class="formularioGrupoInput">
+                        <input type="text" class="formularioInput" name="nombre" id="nombre">
+                        <img id="val" class="formularioValidacionEstado" src="img/cancelar.png" alt="">
+                        <p class="formularioInputError">el Nombre puede contener solo letras.</p>
                     </div>
                 </div>
 
-                <div class="formulario__grupo" id="grupo__apellido">
-                    <label for="apellido" class="formulario__label">Apellido:</label>
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="apellido" id="apellido">
-                        <img class="formulario__validacion-estado" src="img/cancelar.png" alt="">
-                        <p class="formulario__input-error">el Apellido puede contener solo letras.</p>
+                <div class="formularioGrupo" id="grupoApellido">
+                    <label for="apellido" class="formularioLabel">Apellido:</label>
+                    <div class="formularioGrupoInput">
+                        <input type="text" class="formularioInput" name="apellido" id="apellido">
+                        <img id="val" class="formularioValidacionEstado" src="img/cancelar.png" alt="">
+                        <p class="formularioInputError">el Apellido puede contener solo letras.</p>
                     </div>
                 </div>
 
-                <div class="formulario__grupo" id="grupo__email">
-                    <label for="email" class="formulario__label">Email:</label>
-                    <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input" name="email" id="email"
+                <div class="formularioGrupo" id="grupoEmail">
+                    <label for="email" class="formularioLabel">Email:</label>
+                    <div class="formularioGrupoInput">
+                        <input type="email" class="formularioInput" name="email" id="email"
                             placeholder="ejemplo@gmail.com">
-                        <img class="formulario__validacion-estado" src="img/cancelar.png" alt="">
-                        <p class="formulario__input-error">Email no valido</p>
+                        <img id="val" class="formularioValidacionEstado" src="img/cancelar.png" alt="">
+                        <p class="formularioInputError">Email no valido</p>
                     </div>
                 </div>
 
-                <div class="formulario__grupo" id="grupo__fecha">
-                    <label for="fecha" class="formulario__label">Fecha de nacimiento</label>
-                    <div class="formulario__grupo-input">
-                        <input type="date" class="formulario__input" name="fecha" id="fecha">
+                <div class="formularioGrupo" id="grupoFecha">
+                    <label for="fecha" class="formularioLabel">Fecha de nacimiento</label>
+                    <div class="formularioGrupoInput">
+                        <input type="date" class="formularioInput" name="fecha" id="fecha">
                     </div>
                 </div>
 
-                <div class="formulario__grupo" id="grupo__terminos">
-                    <label class="formulario__label">
-                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"> Acepto
+                <div class="formularioGrupo" id="grupoTerminos">
+                    <label class="formularioLabel">
+                        <input class="formularioCheckbox" type="checkbox" name="terminos" id="terminos"> Acepto
                         Terminos y Condiciones
                     </label>
                 </div>
 
-                <div class="formulario__mensaje" id="formulario__mensaje">
-                    <p><img class="icono__error" src="img/quejarse.png" alt="">Error: Por favor revise la información.
+                <div class="formularioMensaje" id="formularioMensaje">
+                    <p><img class="iconoError" src="img/quejarse.png" alt="">Error: Por favor revise la información.
                     </p>
                 </div>
 
-                <div class="formulario__grupo formulario__grupo-boton">
-                    <button type="submit" class="formulario__boton">Enviar</button>
-                    <p class="formulario__mensaje-enviado" id="formulario__mensaje-enviado">Los datos se enviaron
+                <div class="formularioGrupo formularioGrupoBoton">
+                    <button type="submit" class="formularioBoton">Enviar</button>
+                    <p class="formularioMensaje-enviado" id="formularioMensajeEnviado">Los datos se enviaron
                         correctamente!</p>
                 </div>
 
