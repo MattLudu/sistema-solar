@@ -38,7 +38,7 @@
                 <div class="formularioGrupo" id="grupoNombre">
                     <label for="nombre" class="formularioLabel">Nombre:</label>
                     <div class="formularioGrupoInput">
-                        <input type="text" class="formularioInput" name="nombre" id="nombre">
+                        <input type="text" class="formularioInput" name="nombre" id="nombre" required>
                         <img id="val" class="formularioValidacionEstado" src="img/cancelar.png" alt="">
                         <p class="formularioInputError">el Nombre puede contener solo letras.</p>
                     </div>
@@ -47,7 +47,7 @@
                 <div class="formularioGrupo" id="grupoApellido">
                     <label for="apellido" class="formularioLabel">Apellido:</label>
                     <div class="formularioGrupoInput">
-                        <input type="text" class="formularioInput" name="apellido" id="apellido">
+                        <input type="text" class="formularioInput" name="apellido" id="apellido" required>
                         <img id="val" class="formularioValidacionEstado" src="img/cancelar.png" alt="">
                         <p class="formularioInputError">el Apellido puede contener solo letras.</p>
                     </div>
@@ -57,7 +57,7 @@
                     <label for="email" class="formularioLabel">Email:</label>
                     <div class="formularioGrupoInput">
                         <input type="email" class="formularioInput" name="email" id="email"
-                            placeholder="ejemplo@gmail.com">
+                            placeholder="ejemplo@gmail.com" required>
                         <img id="val" class="formularioValidacionEstado" src="img/cancelar.png" alt="">
                         <p class="formularioInputError">Email no valido</p>
                     </div>
@@ -66,13 +66,13 @@
                 <div class="formularioGrupo" id="grupoFecha">
                     <label for="fecha" class="formularioLabel">Fecha de nacimiento</label>
                     <div class="formularioGrupoInput">
-                        <input type="date" class="formularioInput" name="fecha" id="fecha">
+                        <input type="date" class="formularioInput" name="fecha" id="fecha" required>
                     </div>
                 </div>
 
                 <div class="formularioGrupo" id="grupoTerminos">
                     <label class="formularioLabel">
-                        <input class="formularioCheckbox" type="checkbox" name="terminos" id="terminos"> Acepto
+                        <input class="formularioCheckbox" type="checkbox" name="terminos" id="terminos" required> Acepto
                         Terminos y Condiciones
                     </label>
                 </div>
