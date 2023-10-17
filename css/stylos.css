@@ -381,7 +381,7 @@ footer{
     display: flex;
     width: 100%;;
     max-width: 1200px;
-    height: 150px;
+    height: 200px;
     margin: auto;
 }
 .colum1{ 
@@ -399,12 +399,10 @@ footer{
 font-size: 22px;
 }
 .colum2 p{ 
-    color: black
     margin-top: 5px;
     font-size: 10px;
 }
 .colum2 h2{
-    color: black;
     margin-top: 20px;
     font-size: 16px;
 }
