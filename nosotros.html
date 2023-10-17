@@ -80,6 +80,77 @@
             Agradecemos sus consultas y consejos, estamos dispuestos ante cualquier duda. Muchas gracias por ver
             nuestro contenido</p><br>
     </article>
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .team-member {
+      text-align: center;
+      margin: 20px;
+    }
+    img {
+      max-width: 100%;
+      max-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Team</h1>
+  <div id="team-presentation"></div>
+
+  <script>
+    // Define team members with their information
+    const teamMembers = [
+      {
+        name: "John Doe",
+        role: "CEO",
+        image: "john-doe.jpg",
+      },
+      {
+        name: "Jane Smith",
+        role: "Designer",
+        image: "jane-smith.jpg",
+      },
+      {
+        name: "Bob Johnson",
+        role: "Developer",
+        image: "bob-johnson.jpg",
+      },
+    ];
+
+    // Function to create a team member presentation
+    function createTeamMember(member) {
+      const memberDiv = document.createElement("div");
+      memberDiv.className = "team-member";
+
+      const image = document.createElement("img");
+      image.src = member.image;
+      memberDiv.appendChild(image);
+
+      const name = document.createElement("h2");
+      name.textContent = member.name;
+      memberDiv.appendChild(name);
+
+      const role = document.createElement("p");
+      role.textContent = member.role;
+      memberDiv.appendChild(role);
+
+      return memberDiv;
+    }
+
+    // Add team members to the presentation
+    const teamPresentation = document.getElementById("team-presentation");
+    teamMembers.forEach((member) => {
+      const memberElement = createTeamMember(member);
+      teamPresentation.appendChild(memberElement);
+    });
+  </script>
+</body>
+</html>
+
+    
     <footer>
         <h4>Hola soy un footer</h4>
         <div class="botones"><a href="https://www.flaticon.es/iconos-gratis/dom" title="dom iconos">iconos-Freepik-
