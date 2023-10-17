@@ -375,36 +375,36 @@ iframe {
 footer{
     background-color: white;
     color: black;
+    width: 100%;
 }
 .container-body{
     display: flex;
     width: 100%;;
-    max-width: 300px;
-    height: 500px;
+    max-width: 1200px;
+    height: 150px;
+    margin: auto;
 }
 .colum1{ 
+    width: 100%;
     max-width: 300px;
-    heigth: 150px 
 }
 .colum1 img{
     width: 200px;
     height: 150px;
 }
 .colum2{
-    color: black;
-    margin-top: 10px;
+    margin-top: 22px;
 }
 .colum2 h1{
 font-size: 22px;
-    with: 100%
 }
 .colum1 p{ 
     margin-top: 30px;
-    font-size: 5px;
+    font-size: 14px;
 }
 .colum2 h2{
-    margin-top: 8px;
-    font-size: 5px;
+    margin-top: 20px;
+    font-size: 16px;
 }
 /*NEWSLETTER*/
 .content-nl {
