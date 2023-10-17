@@ -170,27 +170,33 @@ div ul li {
 
 
 /*MENU*/
+.menu {
+    display: flex;
+    justify-content: end;
+}
+
 .menu a {
     color: black;
-    margin: 0px 0px 0px 2rem;
+    margin: 0px 1rem;
+
 }
 
-.menu {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    text-align: center;
+.menuBoton {
+    border-radius: 1em;
+    overflow: hidden;
+    transition: 300ms;
 }
 
-.menu .botones:hover {
-    color: rgb(255, 255, 255);
-    transform: rotate(10deg);
+.menu .menuBoton:hover {
+    transform: rotate(5deg);
     background-image: url(../img/button.webp);
     background-size: cover;
     background-position: top;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
+}
+
+.botones:hover {
+    color: rgb(255, 255, 255);
 }
 
 .botones {
