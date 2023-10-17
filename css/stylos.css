@@ -396,15 +396,17 @@ footer{
     margin-top: 22px;
 }
 .colum2 h1{
-font-size: 20px;
+font-size: 22px;
 }
 .colum2 p{ 
-    margin-top: 5px;
-    font-size: 10px;
-.colum2 h2{
     color: black
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 10px;
+}
+.colum2 h2{
+    color: black;
+    margin-top: 20px;
+    font-size: 16px;
 }
 /*NEWSLETTER*/
 .content-nl {
