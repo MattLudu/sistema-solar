@@ -262,6 +262,32 @@ div ul li {
     font-size: 25px;
 }
 
+/*Footer*/
+.container-body{
+    display: flex;
+    place-content: center;
+    height: 200px;
+}
+.colum1{
+    max-width: 300px;
+}
+.colum1 img{
+    width: 200px;
+}
+.colum2{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 60px;    
+}
+.colum2 h1{
+
+    font-size: 22px;
+}
+.colum2 p{ 
+    margin-top: 5px;
+    font-size: 10px;
+}
 
 /*EFECTOS Y CONTENIDO DEL NAV*/
 .sidebar:hover {
@@ -386,31 +412,7 @@ iframe {
     float: right;
 }
 
-.container-body{
-    display: flex;
-    place-content: center;
-    height: 200px;
-}
-.colum1{
-    max-width: 300px;
-}
-.colum1 img{
-    width: 200px;
-}
-.colum2{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    margin-top: 60px;    
-}
-.colum2 h1{
 
-    font-size: 22px;
-}
-.colum2 p{ 
-    margin-top: 5px;
-    font-size: 10px;
-}
 /*NEWSLETTER*/
 .content-nl {
     box-sizing: border-box;
