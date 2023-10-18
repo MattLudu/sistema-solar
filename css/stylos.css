@@ -776,3 +776,76 @@ iframe {
         font-size: 10px;
     }
 }
+/* Media Query para dispositivos de ancho máximo de 1024px (tablets) */
+@media screen and (max-width: 1024px) {
+   
+    h1{
+        font-size: 80px ;
+    }
+    .content{
+        padding: 30px;
+    }
+    .imagenes {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .imagen2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imagenes-carrusel ul {
+        display: flex;
+        padding: 0;
+        width: 300%;
+        animation: slide 15s infinite alternate ease-in-out;
+    }
+
+    .imagenes-carrusel li {
+        list-style: none;
+        width: 100%;
+    }
+
+    .imagenes-carrusel img {
+        width: 30%;
+    }
+
+
+    @keyframes slide {
+        0% {
+            margin-left: 0%;
+        }
+
+        30% {
+            margin-left: 0%;
+        }
+
+        35% {
+            margin-left: -100%;
+        }
+
+        65% {
+            margin-left: -100%;
+        }
+
+        70% {
+            margin-left: -200%;
+        }
+
+        95% {
+            margin-left: -200%;
+        }
+
+    }
+    .colum1{
+        margin-top: 0px;
+    }
+    .colum2 h1{
+        font-size: 40px;
+    }
+    .colum2 p{
+        font-size: 15px;
+    }
+}
