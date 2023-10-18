@@ -372,31 +372,27 @@ iframe {
     z-index: 0;
     float: right;
 }
-footer{
-    background-color: white;
-    color: black;
-    width: 100%;
-}
+
 .container-body{
     display: flex;
-    width: 100%;;
-    max-width: 500px;
+    place-content: center;
     height: 200px;
-    margin: auto;
 }
-.colum1{ 
-    width: 100%;
+.colum1{
     max-width: 300px;
 }
 .colum1 img{
     width: 200px;
-    height: 150px;
 }
 .colum2{
-    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 60px;    
 }
 .colum2 h1{
-font-size: 22px;
+
+    font-size: 22px;
 }
 .colum2 p{ 
     margin-top: 5px;
