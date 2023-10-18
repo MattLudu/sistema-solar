@@ -761,4 +761,18 @@ iframe {
     .formularioBoton {
         width: 100%;
     }
+    /*Footer*/
+    .colum1 img{
+        width: 150px;
+    }
+    .colum2{
+        margin-top: 15px;    
+    }
+    .colum2 h1{
+    
+        font-size: 18px;
+    }
+    .colum2 p{ 
+        font-size: 10px;
+    }
 }
