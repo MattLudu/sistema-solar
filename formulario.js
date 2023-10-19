@@ -19,16 +19,6 @@ formulario.addEventListener('submit', e=>{
 })
 
 
-<form action="https://formspree.io/f/mleyayzn" method="POST">
-  <label for="nombre">Nombre:</label>
-  <input type="text" name="nombre" id="nombre">
-  <label for="email">Email:</label>
-  <input type="email" name="email" id="email">
-  <label for="mensaje">Mensaje:</label>
-  <textarea name="mensaje" id="mensaje"></textarea>
-  <button type="submit">Enviar</button>
-</form>
-
 
 formulario.addEventListener('submit', e=>{
     e.preventDefault()
