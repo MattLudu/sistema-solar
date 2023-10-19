@@ -36,15 +36,15 @@
         </div>
         <h1 class="animate__animated animate__fadeInDown">Suscribite al Newsletter</h1>
     </header>
-    
+
     <div class="content">
         <div class="content-nl">
-            <form action="" class="formulario" id="formulario">
+            <form action="https://formspree.io/f/mleyayzn" method="POST" class="formulario" id="formulario">
 
                 <div class="formularioGrupo" id="grupoNombre">
                     <label for="nombre" class="formularioLabel">Nombre:</label>
                     <div class="formularioGrupoInput">
-                        <input type="text" class="formularioInput" name="nombre" id="nombre" required>
+                        <input type="text" class="formularioInput" name="nombre" id="nombre">
                         <img id="val" class="formularioValidacionEstado" src="img/cancelar.png" alt="">
                         <p class="formularioInputError">el Nombre puede contener solo letras.</p>
                     </div>
@@ -53,7 +53,7 @@
                 <div class="formularioGrupo" id="grupoApellido">
                     <label for="apellido" class="formularioLabel">Apellido:</label>
                     <div class="formularioGrupoInput">
-                        <input type="text" class="formularioInput" name="apellido" id="apellido" required>
+                        <input type="text" class="formularioInput" name="apellido" id="apellido">
                         <img id="val" class="formularioValidacionEstado" src="img/cancelar.png" alt="">
                         <p class="formularioInputError">el Apellido puede contener solo letras.</p>
                     </div>
@@ -63,7 +63,7 @@
                     <label for="email" class="formularioLabel">Email:</label>
                     <div class="formularioGrupoInput">
                         <input type="email" class="formularioInput" name="email" id="email"
-                            placeholder="ejemplo@gmail.com" required>
+                            placeholder="ejemplo@gmail.com">
                         <img id="val" class="formularioValidacionEstado" src="img/cancelar.png" alt="">
                         <p class="formularioInputError">Email no valido</p>
                     </div>
@@ -72,13 +72,13 @@
                 <div class="formularioGrupo" id="grupoFecha">
                     <label for="fecha" class="formularioLabel">Fecha de nacimiento</label>
                     <div class="formularioGrupoInput">
-                        <input type="date" class="formularioInput" name="fecha" id="fecha" required>
+                        <input type="date" class="formularioInput" name="fecha" id="fecha">
                     </div>
                 </div>
 
                 <div class="formularioGrupo" id="grupoTerminos">
                     <label class="formularioLabel">
-                        <input class="formularioCheckbox" type="checkbox" name="terminos" id="terminos" required> Acepto
+                        <input class="formularioCheckbox" type="checkbox" name="terminos" id="terminos"> Acepto
                         Terminos y Condiciones
                     </label>
                 </div>
@@ -99,9 +99,6 @@
     </div>
     <script src="formulario.js"></script>
 
-    <!-- ESTO HICE YO -->
-<form id="form" class="form" action="https://formspree.io/f/mleyayzn" method="POST">
-    
     <footer>
 
         <div class="content container-body">
