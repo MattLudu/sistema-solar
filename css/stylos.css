@@ -568,7 +568,7 @@ iframe {
 
 
 /* Media Query para dispositivos de ancho máximo de 600px (móviles) */
-@media screen and (max-width: 600px) {
+@media screen and (width <= 600px) {
 
     /*todo e index*/
     h1 {
@@ -777,10 +777,10 @@ iframe {
     }
 }
 /* Media Query para dispositivos de ancho máximo de 1024px (tablets) */
-@media screen and (max-width: 1024px) {
+@media screen and ( 600px <= width <= 1200px) {
    
     h1{
-        font-size: 80px ;
+        font-size: 75px ;
     }
     .content{
         padding: 30px;
