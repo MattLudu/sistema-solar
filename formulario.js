@@ -29,3 +29,23 @@ formulario.addEventListener('submit', e=>{
       alert("Email invalido")
       return (false)
 })
+
+<script> 
+const $form = document.querySelector ('#form')
+
+$form.addEventListener('submit, handlesubmit')
+
+async function handlesubmit (event){
+event.preventDefault ()
+const form = new FormData(this)
+const response = await fetch (this.action {
+    method: this.method,
+    body: form, 
+    Headers: {
+        'Accept': 'application/json'
+    }
+})
+if (response.ok) 
+alert('Gracias por contarnos! Pronto responderemos tu consulta :) ')
+}
+</script>
