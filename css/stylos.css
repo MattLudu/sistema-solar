@@ -1,8 +1,8 @@
 /*ESTILOS GENERALES*/
 * {
     font-family: 'Martel', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style: none;
 }
@@ -18,7 +18,7 @@ body {
     margin: 5px 2rem;
     background-color: #ffffff;
     border-radius: 3rem;
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     justify-content: center;
 }
@@ -39,7 +39,6 @@ nav {
 h1 {
     margin-left: 80px;
     font-size: 10vh;
-    font-family: 'Martel', sans-serif;
     display: inline-block;
     background-image: url(../img/Titulo.webp);
     background-repeat: no-repeat;
@@ -52,7 +51,8 @@ h1 {
 
 h2 {
     margin-left: 20px;
-    font-size: 8vh;
+    text-align: center;
+    font-size: 15vw;
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     background-position: center;
@@ -68,11 +68,9 @@ h3 {
     display: inline-block;
     background-image: url(../img/Titulo.webp);
     background-repeat: repeat;
-    background-position: center;
+    background-position: bottom;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    background-position: bottom;
 }
 
 .sidebar {
@@ -93,21 +91,16 @@ article {
 }
 
 section {
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
     font-size: 30px;
     display: flex;
     flex-direction: column;
 }
 
-p {
+p, div ul li {
     font-family: 'Comfortaa', cursive;
-    margin: 15px;
-}
-
-div ul li {
-    font-family: 'Comfortaa', cursive;
-    text-align: center;
-    height: auto;
+    margin: 10px 50px;
+    text-align: left;
 }
 
 *::selection {
@@ -172,7 +165,8 @@ div ul li {
 /*MENU*/
 .menu {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .menu a {
@@ -196,7 +190,7 @@ div ul li {
 }
 
 .botones:hover {
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
 .botones {
@@ -210,7 +204,6 @@ div ul li {
 
 
 /*INDEX*/
-
 /*ESTILO DEL ARTICLE*/
 .img-prin {
     width: 30%;
@@ -219,7 +212,7 @@ div ul li {
     overflow: hidden;
 }
 
-.imagen1 {
+.imagen1, .imagen2 {
     width: 100%;
     height: 100%;
     transition: 500ms;
@@ -297,12 +290,12 @@ div ul li {
 }
 
 .sidebar a {
-    color: rgb(146, 41, 243);
+    color: #9229f3;
     cursor: url('../img/cohete-sel.webp'), auto;
 }
 
 .sidebar a:link {
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
 .nombre_planeta {
@@ -312,12 +305,12 @@ div ul li {
 }
 
 .planeta {
-    font-family: "roboto";
+    font-family: "Roboto";
 }
 
 .icono {
     max-width: 4vh;
-    padding: 2vh 1vh 2vh 1vh;
+    padding: 2vh 1vh;
 }
 
 
@@ -351,7 +344,7 @@ div ul li {
     justify-content: space-around;
 }
 .miembro-equipo {
-    width: 30%; /* Adjust the width as needed */
+    width: 30%;
     margin: 10px;
     text-align: center;
 }
@@ -387,7 +380,7 @@ div ul li {
     font-family: 'Roboto';
     font-size: 30px;
     margin: 10px;
-    color: #000000;
+    color: #000;
 
 }
 
@@ -513,7 +506,7 @@ iframe {
 }
 
 .formularioMensaje p {
-    margin: 0px;
+    margin: 0;
 }
 
 .formularioGrupoBoton {
@@ -536,13 +529,12 @@ iframe {
 
 .formularioBoton:hover {
     border: 2px solid rgb(146, 41, 243);
-    ;
     box-shadow: 3px 6px 10px rgba(211, 211, 211, 1);
 }
 
 .formularioMensaje-enviado {
     font-size: 14px;
-    color: rgb(53, 187, 53);
+    color: #35bb35;
     display: none;
 }
 
@@ -550,10 +542,7 @@ iframe {
     display: block;
 }
 
-.formularioGrupo-correcto .formularioValidacionEstado {
-    opacity: 1;
-}
-
+.formularioGrupo-correcto .formularioValidacionEstado,
 .formularioGrupo-incorrecto .formularioValidacionEstado {
     opacity: 1;
 }
@@ -568,11 +557,11 @@ iframe {
 
 
 /* Media Query para dispositivos de ancho máximo de 600px (móviles) */
-@media screen and (width <= 600px) {
+@media screen and (max-width: 600px) {
 
     /*todo e index*/
     h1 {
-        font-size: 40px;
+        font-size: 35px;
         margin-left: 10px;
     }
 
@@ -582,7 +571,7 @@ iframe {
     }
 
     h2 {
-        font-size: 4vh;
+        font-size: 12vw;
     }
 
     .info-texto {
@@ -591,12 +580,14 @@ iframe {
         font-size: large;
     }
 
-    p {
+    p, div ul li  {
         font-size: small;
+        margin: 10px;
     }
 
     .caracteristicas {
         font-size: small;
+        margin: 10px;
     }
 
     nav {
@@ -609,7 +600,7 @@ iframe {
 
     .menu {
         align-items: center;
-        justify-content: right;
+        justify-content: flex-end;
     }
 
     .menu a {
@@ -629,11 +620,6 @@ iframe {
     .sidebar:hover {
         width: 30vw;
     }
-
-    div ul li {
-        height: 10vh;
-    }
-
     .icono {
         max-width: 8vw;
     }
@@ -657,7 +643,7 @@ iframe {
 
     .imagenes {
         width: 200px;
-        height: 200px;
+        height: 210px;
         overflow: hidden;
     }
 
@@ -777,13 +763,13 @@ iframe {
     }
 }
 /* Media Query para dispositivos de ancho máximo de 1024px (tablets) */
-@media screen and ( 600px <= width <= 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
    
     h1{
         font-size: 75px ;
     }
     .content{
-        padding: 30vh;
+        padding: 3vh;
     }
     .imagenes {
         width: 200px;
