@@ -1,49 +1,29 @@
-const nombre = document.getElementById('nombre')
-const apellido = document.getElementById('apellido')
-const email = document.getElementById('email')
-const formulario = document.getElementById('formulario')
-const val = document.getElementById('val')
 
-formulario.addEventListener('submit', e => {
-    e.preventDefault()
-    if (nombre.value.length < 3) {
-        alert('Nombre muy corto')
-    }
-})
+const $formulario = document.querySelector("[id='formulario']")
 
-formulario.addEventListener('submit', e => {
-    e.preventDefault()
-    if (apellido.value.length < 5) {
-        alert('Apellido muy corto')
-    }
-})
-
-
-
-formulario.addEventListener('submit', e => {
-    e.preventDefault()
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formulario.email.value)) {
-        return (true)
-    }
-    alert("Email invalido")
-    return (false)
-})
-
-const $form = document.querySelector('#formulario')
-$form.addEventListener('submit, handlesubmit')
+$formulario.addEventListener('submit',handlesubmit)
 
 async function handlesubmit(event) {
     event.preventDefault()
-    const form = new FormData(this)
+    const formulario = new FormData(this)
     const response = await fetch(this.action, {
         method: this.method,
-        body: form,
-        Headers: {
-            'Accept': 'application/json'
+        body: formulario,
+        headers: {
+        'Accept': 'application/json'
         }
     })
-
-    if (response.ok){
-        alert('Gracias por contarnos! Pronto responderemos tu consulta :) ')
-    }
 }
+document.getElementById("formulario").addEventListener("submit", function (e) {
+    const nombreInput = document.getElementById("nombre");
+    const nombreValue = nombreInput.value;
+    const apellidoInput = document.getElementById("apellido");
+    const apellidoValue = apellidoInput.value;
+
+    if (nombreValue.length <= 3 && apellidoValue.length <= 5) {
+      alert("Nombre o Apellido muy cortos");
+      e.preventDefault();
+    } else {
+      alert('Gracias por contarnos! :)');
+    }
+  });
